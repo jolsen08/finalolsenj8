@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\EntertainmentAgencyolsenj8.props" />
+</Project>

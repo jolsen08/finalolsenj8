@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Entertainers";
+}
+
+@model List<Entertainer>
+
+
+<ul>
+    @foreach (var e in Model)
+    {
+        <li>@e.EntStageName</li>
+        <form asp-action="Details"><input type="hidden" value="@e.EntertainerId" name="id"  /><button type="Submit">Details</button></form>
+    }
+</ul>
+  
+
+
+<div>
+    <form method="get" asp-action="Add">
+        <button type="Submit">Add Entertainer</button>
+    </form>
+</div>
